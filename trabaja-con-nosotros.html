@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js" defer></script>
+    <title>Sercus - Trabajá con Nosotros</title>
+</head>
+
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b] shadow-2xl shadow-black/40">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-black tracking-tighter text-[#ffd89c] font-headline">
+                <a href="index.html">SENTINEL</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+                <a class="text-gray-400 hover:text-white transition-colors" href="index.html">Inicio</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="consorcios.html">Consorcios</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="custodias-vip.html">Custodias VIP</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="trabaja-con-nosotros.html">Trabajá con nosotros</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="index.html#contacto">Contacto</a>
+            </div>
+            <div class="flex items-center gap-2 md:gap-4">
+                <button id="translate-en-btn" class="flex items-center gap-1 text-gray-400 hover:text-white transition-colors font-bold text-sm tracking-wide px-2">
+                    <span class="material-symbols-outlined text-lg">language</span> EN
+                </button>
+                <button id="translate-es-btn" class="hidden items-center gap-1 text-primary hover:text-white transition-colors font-bold text-sm tracking-wide px-2">
+                    <span class="material-symbols-outlined text-lg">language</span> ES
+                </button>
+                <button
+                    class="gilded-gradient px-4 md:px-6 py-2.5 rounded-xl text-on-primary font-bold text-sm tracking-tight transition-transform active:scale-95 duration-150 whitespace-nowrap hidden sm:block">
+                    Consulta Gratuita
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative min-h-[750px] flex items-center overflow-hidden py-24 px-8">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10">
+                </div>
+                <!-- Using an appropriate abstract/security image from a placeholder service -->
+                <img alt="Custodias VIP Security" class="w-full h-full object-cover opacity-40 grayscale"
+                    src="https://images.unsplash.com/photo-1555529771-464a4b4382c6?auto=format&fit=crop&q=80" />
+            </div>
+            <div class="relative z-20 max-w-7xl mx-auto w-full">
+                <div class="max-w-4xl">
+                    <div
+                        class="inline-flex items-center gap-2 bg-tertiary-container/10 border border-tertiary/20 px-4 py-2 rounded-full mb-8">
+                        <span class="material-symbols-outlined text-tertiary text-sm" data-weight="fill"
+                            style="font-variation-settings: 'FILL' 1;">security</span>
+                        <span class="text-tertiary font-label text-xs font-bold uppercase tracking-[0.2em]">Oportunidades Laborales</span>
+                    </div>
+                    <h1
+                        class="font-headline font-extrabold text-5xl md:text-7xl lg:text-8xl text-on-background leading-[0.9] tracking-tighter mb-8">
+                        Trabajá con <span class="text-primary italic">nosotros</span>
+                    </h1>
+                    <div class="space-y-6 max-w-3xl">
+                        <p class="text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed">
+                            Somos una empresa en constante crecimiento corporativo y humano. Buscamos el mejor talento para sumarse a nuestros equipos de trabajo.
+                        </p>
+                        <p class="text-lg md:text-xl text-gray-400 font-light leading-relaxed">
+                            Si sos un profesional de la seguridad, valorás la excelencia operativa y te interesa formar parte de Sercus Sentinel, dejanos tus datos.
+                        </p>
+                        <div class="pt-4 flex flex-wrap gap-6">
+                            <button
+                                class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-extrabold px-8 py-4 rounded-xl text-lg shadow-xl shadow-primary/10 hover:shadow-primary/20 transition-all duration-300">
+                                Ver Búsquedas Activas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciales (Bento Style) -->
+        <section class="bg-surface-container-low py-24 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-xl">
+                        <h2 class="font-headline font-black text-4xl uppercase tracking-tight mb-4 text-on-background">
+                            Por qué Sercus Sentinel
+                        </h2>
+                        <div class="h-1 w-24 bg-primary"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Diferencial 1 -->
+                    <div class="bg-surface-container-high p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-highest transition-colors duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">psychology</span>
+                        </div>
+                        <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Tecnología + Capital Humano</h3>
+                        <p class="text-on-surface-variant leading-relaxed text-lg">Ofrecemos una solución que combinan el mejor equipo humano con las tecnologías más avanzadas.</p>
+                    </div>
+
+                    <!-- Diferencial 2 -->
+                    <div class="bg-surface-container-high p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-highest transition-colors duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">payments</span>
+                        </div>
+                        <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Costos Accesibles</h3>
+                        <p class="text-on-surface-variant leading-relaxed text-lg">Costos accesibles en base a los requerimientos de nuestros clientes.</p>
+                    </div>
+
+                    <!-- Diferencial 3 -->
+                    <div class="bg-surface-container-high p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-highest transition-colors duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">tune</span>
+                        </div>
+                        <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Soluciones personalizadas</h3>
+                        <p class="text-on-surface-variant leading-relaxed text-lg">Foco en que nuestras soluciones evolucionen en base a las necesidades de nuestros clientes.</p>
+                    </div>
+
+                    <!-- Diferencial 4 -->
+                    <div class="bg-surface-container-high p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-highest transition-colors duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">visibility</span>
+                        </div>
+                        <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Supervisión permanente</h3>
+                        <p class="text-on-surface-variant leading-relaxed text-lg">Supervisión 24×7 con tiempos de respuesta veloces para evitar cualquier contingencia que surja.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Gen Section -->
+        <section class="py-24 px-8 bg-surface-container-lowest">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="glass-panel p-8 md:p-16 rounded-2xl border border-outline-variant/10 shadow-2xl grid grid-cols-1 lg:grid-cols-5 gap-16">
+                    <div class="lg:col-span-2">
+                        <h2 class="font-headline font-black text-4xl mb-6 uppercase tracking-tight">
+                            Sumate a nuestro <br /><span class="text-primary">equipo</span>
+                        </h2>
+                        <p class="text-on-surface-variant text-lg mb-8">
+                            Contáctate con nuestro equipo para conocer más de nuestras soluciones. Envíanos un mensaje y
+                            un experto en seguridad se pondrá en contacto con vos.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-primary">call</span>
+                                </div>
+                                <span class="text-on-surface font-headline font-bold text-sm">11 6032 4750 | 11 4435 0607</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-primary">mail</span>
+                                </div>
+                                <span class="text-on-surface font-headline font-bold text-sm">info@sercus.com.ar</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-primary">location_on</span>
+                                </div>
+                                <span class="text-on-surface font-headline font-bold text-sm">Montevideo 527 7° B, CABA<br>Av. J.M. de Rosas 182 1° B, Lomas del Mirador</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3">
+                        <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label
+                                    class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Nombre Completo</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary text-on-surface placeholder:text-gray-600"
+                                    placeholder="Juan Pérez" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Email</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary text-on-surface placeholder:text-gray-600"
+                                    placeholder="juan@email.com" type="email" />
+                            </div>
+                            <div class="md:col-span-2 space-y-2">
+                                <label
+                                    class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Puesto de Interés</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary text-on-surface placeholder:text-gray-600"
+                                    placeholder="Vigilador, Custodio VIP, Técnico, etc." type="text" />
+                            </div>
+                            <div class="md:col-span-2 space-y-2">
+                                <label
+                                    class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Perfil o enlace a tu CV</label>
+                                <textarea
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary text-on-surface placeholder:text-gray-600"
+                                    placeholder="Pegue aquí el link de su CV o resuma brevemente su experiencia y objetivos..."
+                                    rows="4"></textarea>
+                            </div>
+                            <div class="md:col-span-2">
+                                <button
+                                    class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-black py-4 rounded-xl uppercase tracking-widest hover:brightness-110 transition-all duration-300"
+                                    type="submit">
+                                    Enviar Postulación
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="md:col-span-1">
+                <div class="text-xl font-bold text-[#ffd89c] mb-4 font-headline">SENTINEL ETHOS</div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6 font-body">Líderes en estrategias de seguridad
+                    integral desde 2004. Protegiendo lo que más importa con precisión y profesionalismo.</p>
+                <div class="flex gap-4">
+                    <span
+                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">social_leaderboard</span>
+                    <span
+                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">share</span>
+                    <span
+                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">mail</span>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Servicios</h5>
+                <ul class="space-y-4 text-gray-500 text-sm font-body">
+                    <li><a class="hover:text-white transition-colors" href="#">Vigilancia Física</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Custodia de Valores</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Análisis de Riesgos</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Seguridad Electrónica</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Compañía</h5>
+                <ul class="space-y-4 text-gray-500 text-sm font-body">
+                    <li><a class="hover:text-white transition-colors" href="#">Sobre Nosotros</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Global Operations</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Trabajá con nosotros</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Legal</h5>
+                <ul class="space-y-4 text-gray-500 text-sm font-body">
+                    <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-600 text-xs font-body uppercase tracking-wider">© 2024 Sentinel Ethos Security. All
+                rights reserved.</p>
+            <div class="flex gap-6">
+                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">ARG</span>
+                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">USA</span>
+                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">EUR</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!-- Sercus - Home Page -->
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js" defer></script>
+    <title>Sercus - Home Page</title>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b] shadow-2xl shadow-black/40">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-black tracking-tighter text-[#ffd89c] font-headline">
+                <a href="index.html">SENTINEL</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+                <a class="text-gray-400 hover:text-white transition-colors" href="index.html">Inicio</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="consorcios.html">Consorcios</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="custodias-vip.html">Custodias VIP</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="trabaja-con-nosotros.html">Trabajá con nosotros</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="index.html#contacto">Contacto</a>
+            </div>
+            <div class="flex items-center gap-2 md:gap-4">
+                <button id="translate-en-btn" class="flex items-center gap-1 text-gray-400 hover:text-white transition-colors font-bold text-sm tracking-wide px-2">
+                    <span class="material-symbols-outlined text-lg">language</span> EN
+                </button>
+                <button id="translate-es-btn" class="hidden items-center gap-1 text-primary hover:text-white transition-colors font-bold text-sm tracking-wide px-2">
+                    <span class="material-symbols-outlined text-lg">language</span> ES
+                </button>
+                <button
+                    class="gilded-gradient px-4 md:px-6 py-2.5 rounded-xl text-on-primary font-bold text-sm tracking-tight transition-transform active:scale-95 duration-150 whitespace-nowrap hidden sm:block">
+                    Consulta Gratuita
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover opacity-40"
+                data-alt="Professional security personnel in modern office building"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpfzn_zmpvgIa4l5FpRs6x9_2wONcbXc379RiGM4XNAvckgqdNTw4maTRt8HSZROcArb3XzEIdRj0F0chAtk_paWkBjBPXMIqIEHjL4cXcjGzFVfM3ca0dMZDDcsy2l7hdUKHX1tYqqcl2G7-PbTYu-wH-3F0gOF-3Y1oEJHkjRBa6r_G22QV73LRo72QqwOvybWM4ExcHLEiXoWo3akv8TaG4NfSWGe5AdfwC-8x-XDjDddcorfZxKB6I3ds6eFYhwPjSGPVFUtm" />
+            <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+            <div class="max-w-3xl">
+                <span
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-container/20 text-tertiary rounded-full text-xs font-bold tracking-widest uppercase mb-6">
+                    <span class="material-symbols-outlined text-sm"
+                        style="font-variation-settings: 'FILL' 1;">shield</span>
+                    Estrategia de Protección
+                </span>
+                <h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
+                    Excelencia en <br /><span class="text-primary">seguridad integral</span>
+                </h1>
+                <p class="font-body text-xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl">
+                    Desde el 2004 implementando la estrategia más conveniente para lograr el mantenimiento del orden y
+                    la protección de personas y bienes.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button
+                        class="gilded-gradient px-8 py-4 rounded-xl text-on-primary font-bold text-lg flex items-center gap-2">
+                        Ver Más
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <button
+                        class="bg-surface-container-high px-8 py-4 rounded-xl text-on-surface font-bold text-lg hover:bg-surface-container-highest transition-colors border border-outline-variant/20">
+                        Nuestra Historia
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-24 px-8 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Modern corporate security architectural detail"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeH4WSsoFLxWxbcbjAD1x6jnJuVj7C1ZTbMXkLH1AALR9aHLEFABOQoOKa3ihLNNuCe-yNjt8nh4577LU8QYdc9tv9PaxtMg0lL6qJqzRYAwtSu-k6Xr6XIKQC0RBusvAdx3Wfp1yTAc8g35Jx3OZuZzJlCwnSOlgMYUoxpnfXRyGPwJy6X4N-ElY3zgzG9seCSHNQ14163iQcLWd9LgWEptvsc3vd5vdqHaaSoa5iOBYV6psaoxDe7nrkcMePTbCLYbDT5qCXENFw" />
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-xl shadow-2xl hidden lg:block">
+                        <p class="font-headline font-black text-on-primary text-5xl leading-none">+20</p>
+                        <p class="font-label text-on-primary font-bold uppercase tracking-widest text-xs mt-2">Años de
+                            Liderazgo</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-label text-primary font-bold tracking-[0.2em] uppercase mb-4">Sobre Nosotros</h2>
+                    <h3 class="font-headline text-4xl md:text-5xl font-bold mb-8 leading-tight">Profesionales con
+                        sólidos antecedentes.</h3>
+                    <div class="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
+                        <p>SERCUS S.A es una empresa argentina constituida en el año 2004 por profesionales en materia
+                            de seguridad con sólidos antecedentes...</p>
+                        <p>Nuestro enfoque se basa en la integridad y el compromiso absoluto con la tranquilidad de
+                            nuestros clientes, adaptando cada protocolo a la realidad específica de la operación.</p>
+                    </div>
+                    <div class="mt-12 grid grid-cols-2 gap-8 border-t border-white/5 pt-8">
+                        <div>
+                            <p class="font-headline text-3xl font-bold text-white">+15 años</p>
+                            <p class="text-sm text-gray-500 font-label tracking-wide uppercase mt-1">de experiencia</p>
+                        </div>
+                        <div>
+                            <p class="font-headline text-3xl font-bold text-white">+250</p>
+                            <p class="text-sm text-gray-500 font-label tracking-wide uppercase mt-1">trabajos realizados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section (Bento Style) -->
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-label text-primary font-bold tracking-[0.2em] uppercase mb-4">Soluciones</h2>
+                <h3 class="font-headline text-4xl md:text-5xl font-bold">Nuestros servicios</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Service Card 1 -->
+                <div
+                    class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors group">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 0;">query_stats</span>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-3">Análisis de riesgos</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Evaluación detallada de vulnerabilidades
+                        para anticipar cualquier amenaza potencial.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div
+                    class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors group">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 0;">admin_panel_settings</span>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-3">Custodia de personas</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Protección ejecutiva de alto nivel con
+                        personal altamente capacitado.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div
+                    class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors group">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-3">Custodia y transporte</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Logística segura para el movimiento de
+                        bienes y valores críticos.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="md:col-span-2 bg-surface-container-high p-8 rounded-xl relative overflow-hidden group">
+                    <div class="relative z-10 flex flex-col md:flex-row justify-between h-full">
+                        <div class="max-w-md">
+                            <h4 class="font-headline text-2xl font-bold mb-4">Vigilancia y Monitoreo 24/7</h4>
+                            <p class="text-on-surface-variant mb-6">Controles de accesos, alarmas y vigilancia remota
+                                con tecnología de última generación para una respuesta inmediata.</p>
+                            <ul class="space-y-2 text-sm font-medium">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Sistemas de Alarma</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Monitoreo en Tiempo Real</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Vigilancia Presencial</li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 md:mt-0 flex items-end">
+                            <span
+                                class="material-symbols-outlined text-8xl text-primary/5 group-hover:text-primary/10 transition-colors">monitoring</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card 5 -->
+                <div
+                    class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors group">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 0;">contract_edit</span>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-3">Estudios de seguridad</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Planificación estratégica para
+                        infraestructuras y perímetros complejos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Differentiation Section -->
+    <section class="py-24 px-8 bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/3">
+                    <h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">Nuestros diferenciales</h2>
+                    <p class="text-on-surface-variant leading-relaxed">Lo que nos posiciona como referentes en el
+                        mercado es la atención obsesiva al detalle y la personalización del servicio.</p>
+                </div>
+                <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8">
+                    <div class="flex gap-4">
+                        <span class="text-primary font-black text-2xl">01</span>
+                        <div>
+                            <h5 class="font-bold text-lg mb-2">Estudio de las necesidades</h5>
+                            <p class="text-sm text-gray-500">Analizamos el entorno específico antes de proponer
+                                cualquier solución.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-primary font-black text-2xl">02</span>
+                        <div>
+                            <h5 class="font-bold text-lg mb-2">Provisión del personal apto</h5>
+                            <p class="text-sm text-gray-500">Rigurosos procesos de selección y capacitación continua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-primary font-black text-2xl">03</span>
+                        <div>
+                            <h5 class="font-bold text-lg mb-2">Control y supervisión</h5>
+                            <p class="text-sm text-gray-500">Supervisión constante sin interferir en el desarrollo de
+                                las tareas.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-primary font-black text-2xl">04</span>
+                        <div>
+                            <h5 class="font-bold text-lg mb-2">Contacto permanente</h5>
+                            <p class="text-sm text-gray-500">Líneas abiertas 24/7 para una comunicación fluida con el
+                                cliente.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-primary font-black text-2xl">05</span>
+                        <div>
+                            <h5 class="font-bold text-lg mb-2">Tesoros inteligentes</h5>
+                            <p class="text-sm text-gray-500">Innovación tecnológica aplicada a la custodia de activos
+                                críticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section -->
+    <section class="py-20 px-8 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="font-label text-xs tracking-widest uppercase text-gray-500 mb-12">Empresas que confían en nosotros
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 grayscale opacity-60">
+                <span class="font-headline text-2xl md:text-3xl font-bold tracking-tight text-on-surface">Sanatorio
+                    Urquiza</span>
+                <span class="font-headline text-2xl md:text-3xl font-bold tracking-tight text-on-surface">OSDEPYM</span>
+                <span class="font-headline text-2xl md:text-3xl font-bold tracking-tight text-on-surface">ICANA</span>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-surface-container-high rounded-xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-12 lg:p-16">
+                    <h2 class="font-headline text-4xl font-bold mb-8">Contactanos</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Nombre</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
+                                    type="text" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Apellido</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
+                                    type="text" />
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Email</label>
+                            <input
+                                class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
+                                type="email" />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Teléfono</label>
+                            <input
+                                class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
+                                type="tel" />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Mensaje</label>
+                            <textarea
+                                class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
+                                rows="4"></textarea>
+                        </div>
+                        <button
+                            class="w-full gilded-gradient py-4 rounded-xl text-on-primary font-bold text-lg shadow-lg shadow-primary/10"
+                            type="submit">Enviar Consulta</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 relative bg-[#0e0e0e] flex items-center justify-center overflow-hidden">
+                    <div class="relative z-10 p-12 text-center">
+                        <div
+                            class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
+                            <span class="material-symbols-outlined text-3xl">location_on</span>
+                        </div>
+                        <h4 class="font-headline text-2xl font-bold mb-2">Oficinas Centrales</h4>
+                        <p class="text-on-surface-variant text-sm mt-2">
+                            Montevideo 527 7° B - CABA<br><br>
+                            Av. Brigadier Juan Manuel de Rosas 182 1° B -<br>Lomas del Mirador, Prov. BA
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-outline-variant/20">
+                            <p class="text-on-surface-variant text-sm font-bold">11 6032 4750 | 11 4435 0607</p>
+                            <p class="text-on-surface-variant text-sm mt-1">info@sercus.com.ar</p>
+                        </div>
+                        <div class="mt-12 h-64 w-full rounded-lg overflow-hidden border border-outline-variant/10">
+                            <img class="w-full h-full object-cover opacity-50"
+                                data-alt="Map location showing Montevideo street in Buenos Aires"
+                                data-location="CABA, Argentina"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy6LEPs4KAQ8VJkuTRRLFpseDiBFIV6ZUUeY9oajikVBY2GY2fsMKOkuMvvPvBL02PHMi_MxbPF6K36BuAjmPilBwhW6ihgeTBlWmTIimL3rqoB52dEG2BqUufubE5J7pCf6waMjL0KztAsb5smnWhb9QrbEa4Xtjyef2cflArr1EqRvY0yhl-1HCh9gDZF2mgMz3aPBsYB6In9ahwXPSdqiYQyW-_qKCtczD6pfE14WQXKx-qxRvCpq_T3PrcILLtgmQLflZSGOfc" />
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 opacity-10 pointer-events-none">
+                        <svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+                            <path d="M0 0 L100 100 M100 0 L0 100" stroke="currentColor" stroke-width="0.1"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="md:col-span-1">
+                <div class="text-xl font-bold text-[#ffd89c] mb-4 font-headline">SENTINEL ETHOS</div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6 font-body">Líderes en estrategias de seguridad
+                    integral desde 2004. Protegiendo lo que más importa con precisión y profesionalismo.</p>
+                <div class="flex gap-4">
+                    <span
+                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">social_leaderboard</span>
+                    <span
+                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">share</span>
+                    <span
+                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">mail</span>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Servicios</h5>
+                <ul class="space-y-4 text-gray-500 text-sm font-body">
+                    <li><a class="hover:text-white transition-colors" href="#">Vigilancia Física</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Custodia de Valores</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Análisis de Riesgos</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Seguridad Electrónica</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Compañía</h5>
+                <ul class="space-y-4 text-gray-500 text-sm font-body">
+                    <li><a class="hover:text-white transition-colors" href="#">Sobre Nosotros</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Global Operations</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Trabajá con nosotros</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Legal</h5>
+                <ul class="space-y-4 text-gray-500 text-sm font-body">
+                    <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-600 text-xs font-body uppercase tracking-wider">© 2024 Sentinel Ethos Security. All
+                rights reserved.</p>
+            <div class="flex gap-6">
+                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">ARG</span>
+                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">USA</span>
+                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">EUR</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
