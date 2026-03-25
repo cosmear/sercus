@@ -20,8 +20,80 @@ function loadGoogleTranslate() {
     document.head.appendChild(script);
 }
 
+// --- Modal Consulta Gratuita ---
+function setupConsultaModal() {
+    const modal = document.getElementById('consulta-modal');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const submitBtn = document.getElementById('submit-consulta-btn');
+    const successMsg = document.getElementById('consulta-success-msg');
+    const openBtns = document.querySelectorAll('.js-consulta-btn');
+    const modalInner = modal ? modal.firstElementChild : null;
+
+    if (!modal || !closeBtn || !openBtns.length) return;
+
+    function openModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        // Small delay to allow display:flex to apply before animating opacity
+        setTimeout(() => {
+            modal.classList.remove('opacity-0');
+            if (modalInner) {
+                modalInner.classList.remove('scale-95');
+                modalInner.classList.add('scale-100');
+            }
+        }, 10);
+    }
+
+    function closeModal() {
+        modal.classList.add('opacity-0');
+        if (modalInner) {
+            modalInner.classList.remove('scale-100');
+            modalInner.classList.add('scale-95');
+        }
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            // Reset form and message when closing
+            if (successMsg) successMsg.classList.add('hidden');
+            const form = modal.querySelector('form');
+            if (form) form.reset();
+        }, 300);
+    }
+
+    openBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal();
+        });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+
+    // Close when clicking outside the modal content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Handle submit simulation
+    if (submitBtn) {
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const form = modal.querySelector('form');
+            if (form && form.checkValidity()) {
+                if (successMsg) successMsg.classList.remove('hidden');
+                setTimeout(closeModal, 2000);
+            } else {
+                if (form) form.reportValidity();
+            }
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadGoogleTranslate();
+    setupConsultaModal();
 
     // Give GT a moment to render its select
     setTimeout(bindTranslateButtons, 1500);
