@@ -1,481 +1,339 @@
-<!-- Sercus - Home Page -->
 <!DOCTYPE html>
-
 <html class="dark" lang="es">
-
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+        name="description"
+        content="Sercus brinda seguridad integral para edificios, custodias sensibles y operaciones corporativas en CABA y GBA."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sercus | Seguridad integral en CABA y GBA" />
+    <meta
+        property="og:description"
+        content="Cobertura profesional para consorcios, custodias VIP y operaciones sensibles con respuesta comercial directa."
+    />
+    <meta
+        property="og:image"
+        content="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpfzn_zmpvgIa4l5FpRs6x9_2wONcbXc379RiGM4XNAvckgqdNTw4maTRt8HSZROcArb3XzEIdRj0F0chAtk_paWkBjBPXMIqIEHjL4cXcjGzFVfM3ca0dMZDDcsy2l7hdUKHX1tYqqcl2G7-PbTYu-wH-3F0gOF-3Y1oEJHkjRBa6r_G22QV73LRo72QqwOvybWM4ExcHLEiXoWo3akv8TaG4NfSWGe5AdfwC-8x-XDjDddcorfZxKB6I3ds6eFYhwPjSGPVFUtm"
+    />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="./js/tailwind-config.js"></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/main.js" defer></script>
-    <title>Sercus - Home Page</title>
+    <title>Sercus | Seguridad integral en CABA y GBA</title>
 </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary" data-page="home">
+    <div id="site-header"></div>
 
-<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
-    <!-- Top Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b] shadow-2xl shadow-black/40">
-        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-            <div class="text-2xl font-black tracking-tighter text-[#ffd89c] font-headline">
-                <a href="index.html">SENTINEL</a>
+    <main id="main-content" class="pt-20">
+        <section class="relative overflow-hidden px-5 pb-24 pt-12 md:px-8 md:pt-20">
+            <div class="absolute inset-0 bg-mesh opacity-80"></div>
+            <div class="absolute inset-0">
+                <img
+                    alt="Equipo de seguridad profesional en un entorno corporativo"
+                    class="h-full w-full object-cover opacity-30"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpfzn_zmpvgIa4l5FpRs6x9_2wONcbXc379RiGM4XNAvckgqdNTw4maTRt8HSZROcArb3XzEIdRj0F0chAtk_paWkBjBPXMIqIEHjL4cXcjGzFVfM3ca0dMZDDcsy2l7hdUKHX1tYqqcl2G7-PbTYu-wH-3F0gOF-3Y1oEJHkjRBa6r_G22QV73LRo72QqwOvybWM4ExcHLEiXoWo3akv8TaG4NfSWGe5AdfwC-8x-XDjDddcorfZxKB6I3ds6eFYhwPjSGPVFUtm"
+                />
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/85 to-surface/30"></div>
             </div>
-            <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
-                <a class="text-gray-400 hover:text-white transition-colors" href="index.html">Inicio</a>
-                <a class="text-gray-400 hover:text-white transition-colors" href="consorcios.html">Consorcios</a>
-                <a class="text-gray-400 hover:text-white transition-colors" href="custodias-vip.html">Custodias VIP</a>
-                <a class="text-gray-400 hover:text-white transition-colors" href="trabaja-con-nosotros.html">Trabajá con
-                    nosotros</a>
-                <a class="text-gray-400 hover:text-white transition-colors" href="index.html#contacto">Contacto</a>
-            </div>
-            <div class="flex items-center gap-2 md:gap-4">
-                <button id="translate-en-btn"
-                    class="flex items-center gap-1 text-gray-400 hover:text-white transition-colors font-bold text-sm tracking-wide px-2">
-                    <span class="material-symbols-outlined text-lg">language</span> EN
-                </button>
-                <button id="translate-es-btn"
-                    class="hidden items-center gap-1 text-primary hover:text-white transition-colors font-bold text-sm tracking-wide px-2">
-                    <span class="material-symbols-outlined text-lg">language</span> ES
-                </button>
-                <button
-                    class="js-consulta-btn gilded-gradient px-4 md:px-6 py-2.5 rounded-xl text-on-primary font-bold text-sm tracking-tight transition-transform active:scale-95 duration-150 whitespace-nowrap hidden sm:block">
-                    Consulta Gratuita
-                </button>
-            </div>
-        </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover opacity-40"
-                data-alt="Professional security personnel in modern office building"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpfzn_zmpvgIa4l5FpRs6x9_2wONcbXc379RiGM4XNAvckgqdNTw4maTRt8HSZROcArb3XzEIdRj0F0chAtk_paWkBjBPXMIqIEHjL4cXcjGzFVfM3ca0dMZDDcsy2l7hdUKHX1tYqqcl2G7-PbTYu-wH-3F0gOF-3Y1oEJHkjRBa6r_G22QV73LRo72QqwOvybWM4ExcHLEiXoWo3akv8TaG4NfSWGe5AdfwC-8x-XDjDddcorfZxKB6I3ds6eFYhwPjSGPVFUtm" />
-            <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
-        </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
-            <div class="max-w-3xl">
-                <span
-                    class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-container/20 text-tertiary rounded-full text-xs font-bold tracking-widest uppercase mb-6">
-                    <span class="material-symbols-outlined text-sm"
-                        style="font-variation-settings: 'FILL' 1;">shield</span>
-                    Estrategia de Protección
-                </span>
-                <h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
-                    Excelencia en <br /><span class="text-primary">seguridad integral</span>
-                </h1>
-                <p class="font-body text-xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl">
-                    Desde el 2004 implementando la estrategia más conveniente para lograr el mantenimiento del orden y
-                    la protección de personas y bienes.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <button
-                        class="gilded-gradient px-8 py-4 rounded-xl text-on-primary font-bold text-lg flex items-center gap-2 transition-transform active:scale-95 hover:brightness-110">
-                        VER MÁS
-                        <span class="material-symbols-outlined">arrow_forward</span>
-                    </button>
+            <div class="relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+                <div class="max-w-3xl">
+                    <p class="section-eyebrow">Seguridad privada en CABA y GBA</p>
+                    <h1 class="mt-6 font-headline text-5xl font-black leading-[0.94] tracking-tight text-white md:text-7xl">
+                        Seguridad integral para personas, edificios y operaciones sensibles.
+                    </h1>
+                    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-on-surface-variant md:text-xl">
+                        Diseñamos esquemas de cobertura a medida para consorcios, custodias VIP y operaciones que necesitan orden, presencia y respuesta profesional.
+                    </p>
+                    <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                        <a
+                            class="gilded-gradient inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-extrabold tracking-tight text-on-primary shadow-xl shadow-primary/10 transition-transform duration-150 hover:brightness-110 active:scale-95"
+                            href="#contacto"
+                        >
+                            Hablar con Sercus
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                        <a
+                            class="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-surface-container px-7 py-4 text-base font-semibold text-on-surface transition-colors hover:border-primary/30 hover:text-primary"
+                            href="https://wa.me/541160324750?text=Hola%20Sercus%2C%20quiero%20hacer%20una%20consulta%20sobre%20sus%20servicios."
+                            rel="noreferrer"
+                            target="_blank"
+                        >
+                            Escribir por WhatsApp
+                            <span class="material-symbols-outlined">north_east</span>
+                        </a>
+                    </div>
+                    <div class="mt-10 grid gap-4 sm:grid-cols-3">
+                        <div class="hero-stat">
+                            <p class="text-2xl font-black text-white">+15 años</p>
+                            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Trayectoria en seguridad integral y control operativo.</p>
+                        </div>
+                        <div class="hero-stat">
+                            <p class="text-2xl font-black text-white">24/7</p>
+                            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Disponibilidad comercial para urgencias y coordinación.</p>
+                        </div>
+                        <div class="hero-stat">
+                            <p class="text-2xl font-black text-white">CABA + GBA</p>
+                            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Cobertura en edificios, custodias y servicios corporativos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-panel rounded-[2rem] border border-white/10 p-6 shadow-2xl shadow-black/30">
+                    <p class="section-eyebrow">Cobertura destacada</p>
+                    <div class="mt-5 space-y-5">
+                        <div class="rounded-[1.5rem] border border-white/10 bg-surface-container-low p-5">
+                            <p class="text-sm font-semibold text-primary">Consorcios y edificios</p>
+                            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Control de accesos, vigilancia y protocolos adaptados a la dinámica real del inmueble.</p>
+                        </div>
+                        <div class="rounded-[1.5rem] border border-white/10 bg-surface-container-low p-5">
+                            <p class="text-sm font-semibold text-primary">Custodias VIP</p>
+                            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Equipos discretos y capacitados para traslados, eventos y protección personal.</p>
+                        </div>
+                        <div class="rounded-[1.5rem] border border-white/10 bg-surface-container-low p-5">
+                            <p class="text-sm font-semibold text-primary">Operaciones sensibles</p>
+                            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Custodia de valores, análisis de riesgo y soporte operativo para situaciones críticas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section class="py-24 px-8 bg-surface-container-low">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        </section>
+
+        <section class="bg-surface-container-low px-5 py-24 md:px-8">
+            <div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
                 <div class="relative">
-                    <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
-                        <img class="w-full h-full object-cover"
-                            data-alt="Modern corporate security architectural detail"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeH4WSsoFLxWxbcbjAD1x6jnJuVj7C1ZTbMXkLH1AALR9aHLEFABOQoOKa3ihLNNuCe-yNjt8nh4577LU8QYdc9tv9PaxtMg0lL6qJqzRYAwtSu-k6Xr6XIKQC0RBusvAdx3Wfp1yTAc8g35Jx3OZuZzJlCwnSOlgMYUoxpnfXRyGPwJy6X4N-ElY3zgzG9seCSHNQ14163iQcLWd9LgWEptvsc3vd5vdqHaaSoa5iOBYV6psaoxDe7nrkcMePTbCLYbDT5qCXENFw" />
+                    <div class="overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-black/30">
+                        <img
+                            alt="Detalle arquitectónico de edificio corporativo vigilado"
+                            class="aspect-[4/5] h-full w-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeH4WSsoFLxWxbcbjAD1x6jnJuVj7C1ZTbMXkLH1AALR9aHLEFABOQoOKa3ihLNNuCe-yNjt8nh4577LU8QYdc9tv9PaxtMg0lL6qJqzRYAwtSu-k6Xr6XIKQC0RBusvAdx3Wfp1yTAc8g35Jx3OZuZzJlCwnSOlgMYUoxpnfXRyGPwJy6X4N-ElY3zgzG9seCSHNQ14163iQcLWd9LgWEptvsc3vd5vdqHaaSoa5iOBYV6psaoxDe7nrkcMePTbCLYbDT5qCXENFw"
+                        />
                     </div>
-                    <div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-xl shadow-2xl hidden lg:block">
-                        <p class="font-headline font-black text-on-primary text-5xl leading-none">+15</p>
-                        <p class="font-label text-on-primary font-bold uppercase tracking-widest text-xs mt-2">AÑOS DE
-                            EXPERIENCIA</p>
+                    <div class="absolute -bottom-6 -right-6 hidden rounded-[1.5rem] bg-primary px-6 py-5 shadow-xl lg:block">
+                        <p class="font-headline text-4xl font-black text-on-primary">2004</p>
+                        <p class="mt-1 text-xs font-bold uppercase tracking-[0.22em] text-on-primary">Inicio de operaciones</p>
                     </div>
                 </div>
                 <div>
-                    <h2 class="font-label text-primary font-bold tracking-[0.2em] uppercase mb-4">Sobre Nosotros</h2>
-                    <h3 class="font-headline text-4xl md:text-5xl font-bold mb-8 leading-tight">Profesionales con
-                        sólidos antecedentes.</h3>
-                    <div class="space-y-6 text-gray-400 font-body text-lg leading-relaxed">
-                        <p>SERCUS S.A es una empresa argentina constituida en el año 2004 por profesionales en materia
-                            de seguridad con sólidos antecedentes en su actividad.</p>
-                        <p>Nuestra gestión consiste en asesorar y determinar en cada servicio la estrategia más
-                            conveniente para lograr el mantenimiento del orden y la protección de personas y bienes.</p>
-                        <p>El incremento que se produce en forma permanente en la proliferación de ilícitos nos obliga a
-                            mancomunarnos con nuestros clientes para que en forma conjunta se estudie y determinen las
-                            tareas a realizar en la actividad que nos ocupa para minimizar, evitar o anular las
-                            exposiciones a los riesgos reales o potenciales a los que se está expuesto.</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Services Section (Bento Style) -->
-    <section class="py-24 px-8 bg-surface">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="font-label text-primary font-bold tracking-[0.2em] uppercase mb-4">Soluciones</h2>
-                <h3 class="font-headline text-4xl md:text-5xl font-bold">Nuestros servicios</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Service 1 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">query_stats</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Análisis de riesgos</h4>
-                    </div>
-                </div>
-                <!-- Service 2 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">support_agent</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Asesoramiento sobre seguridad integral
-                        </h4>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">admin_panel_settings</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Custodia de personas</h4>
-                    </div>
-                </div>
-                <!-- Service 4 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">local_shipping</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Custodia y transporte de bienes y valores
-                        </h4>
-                    </div>
-                </div>
-                <!-- Service 5 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">contract_edit</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Estudios de seguridad</h4>
-                    </div>
-                </div>
-                <!-- Service 6 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">event</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Eventos</h4>
-                    </div>
-                </div>
-                <!-- Service 7 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">policy</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Prevención de pérdidas</h4>
-                    </div>
-                </div>
-                <!-- Service 8 -->
-                <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined">visibility</span>
-                        </div>
-                        <h4 class="font-headline text-lg font-bold text-white">Servicio de vigilancia</h4>
-                    </div>
-                </div>
-                <!-- Service 9 -->
-                    <div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-high transition-colors">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                                <span class="material-symbols-outlined">security</span>
-                            </div>
-                            <div>
-                                <h4 class="font-headline text-lg font-bold mb-1 text-white">Alarmas y seguridad</h4>
-                                <p class="text-on-surface-variant text-xs leading-relaxed">Detectores, barreras infrarrojas, sensores de movimiento, control de acceso, cerraduras de alta seguridad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Differentiation Section -->
-        <section class="py-24 px-8 bg-surface-container-lowest">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col lg:flex-row gap-16">
-                    <div class="lg:w-1/3">
-                        <h2 class="font-headline text-4xl md:text-5xl font-bold mb-6 text-white">Nuestros diferenciales</h2>
-                        <p class="text-on-surface-variant leading-relaxed text-gray-400">Lo que nos posiciona como referentes en el mercado es la atención obsesiva al detalle y la personalización del servicio.</p>
-                    </div>
-                    <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8">
-                        <div class="flex gap-4">
-                            <span class="text-primary font-black text-2xl">01</span>
-                            <div>
-                                <h5 class="font-bold text-white text-lg mb-2">Estudio de las necesidades</h5>
-                                <p class="text-sm text-gray-400">Estudio de las necesidades del servicio a cumplir.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="text-primary font-black text-2xl">02</span>
-                            <div>
-                                <h5 class="font-bold text-white text-lg mb-2">Personal apto</h5>
-                                <p class="text-sm text-gray-400">Provisión del personal apto para cubrir el puesto sin ningún tipo de dependencia laboral para el cliente.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="text-primary font-black text-2xl">03</span>
-                            <div>
-                                <h5 class="font-bold text-white text-lg mb-2">Control y supervisión</h5>
-                                <p class="text-sm text-gray-400">Control y supervisión del servicio sin interferir en la actividad del lugar custodiado/ Personal uniformado (armado en el caso de ser requerido) munido de equipo.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="text-primary font-black text-2xl">04</span>
-                            <div>
-                                <h5 class="font-bold text-white text-lg mb-2">Contacto permanente</h5>
-                                <p class="text-sm text-gray-400">Contacto permanente con nuestros clientes a fin de lograr un feedback efectivo que permita proceso de mejora continua del servicio.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="text-primary font-black text-2xl">05</span>
-                            <div>
-                                <h5 class="font-bold text-white text-lg mb-2">Tesoros inteligentes</h5>
-                                <p class="text-sm text-gray-400">Tesoros inteligentes para el resguardo de valores domiciliares y comerciales.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="text-primary font-black text-2xl">06</span>
-                            <div>
-                                <h5 class="font-bold text-white text-lg mb-2">Seguridad electrónica</h5>
-                                <p class="text-sm text-gray-400">Seguridad electrónica integral.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="text-primary font-black text-2xl">07</span>
-                            <div>
-                                <h5 class="font-bold text-white text-lg mb-2">Asesoramiento legal y técnico</h5>
-                                <p class="text-sm text-gray-400">Servicios de asesoramiento en materia legal y técnica.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients Section -->
-    <section class="py-20 px-8 bg-surface-container-low">
-        <div class="max-w-7xl mx-auto text-center">
-            <p class="font-label text-xs tracking-widest uppercase text-gray-500 mb-12">Empresas que confían en nosotros
-            </p>
-            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 grayscale opacity-60">
-                <span class="font-headline text-2xl md:text-3xl font-bold tracking-tight text-on-surface">Sanatorio
-                    Urquiza</span>
-                <span class="font-headline text-2xl md:text-3xl font-bold tracking-tight text-on-surface">OSDEPYM</span>
-                <span class="font-headline text-2xl md:text-3xl font-bold tracking-tight text-on-surface">ICANA</span>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section class="py-24 px-8 bg-surface">
-        <div class="max-w-7xl mx-auto">
-            <div class="bg-surface-container-high rounded-xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-                <div class="md:w-1/2 p-12 lg:p-16">
-                    <div class="mb-12">
-                        <h2 class="font-headline text-4xl font-bold text-primary tracking-widest mb-4">CONTÁCTENOS</h2>
-                        <div class="flex gap-8 mb-6">
-                            <div>
-                                <p class="font-headline text-4xl font-bold text-white">+15</p>
-                                <p class="text-xs text-gray-500 font-bold uppercase tracking-wider mt-1">AÑOS DE
-                                    EXPERIENCIA</p>
-                            </div>
-                            <div>
-                                <p class="font-headline text-4xl font-bold text-white">+250</p>
-                                <p class="text-xs text-gray-500 font-bold uppercase tracking-wider mt-1">TRABAJOS
-                                    REALIZADOS</p>
-                            </div>
-                        </div>
-                        <p class="text-on-surface-variant text-lg">Contáctate con nuestro equipo para conocer más de
-                            nuestras soluciones.</p>
-                    </div>
-                    <h2 class="font-headline text-2xl font-bold mb-6">CONTACTANOS</h2>
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label
-                                    class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Nombre</label>
-                                <input
-                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
-                                    type="text" />
-                            </div>
-                            <div>
-                                <label
-                                    class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Apellido</label>
-                                <input
-                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
-                                    type="text" />
-                            </div>
-                        </div>
-                        <div>
-                            <label
-                                class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Email</label>
-                            <input
-                                class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
-                                type="email" />
-                        </div>
-                        <div>
-                            <label
-                                class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Teléfono</label>
-                            <input
-                                class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
-                                type="tel" />
-                        </div>
-                        <div>
-                            <label
-                                class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Mensaje</label>
-                            <textarea
-                                class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 transition-all text-on-surface"
-                                rows="4"></textarea>
-                        </div>
-                        <button
-                            class="w-full gilded-gradient py-4 rounded-xl text-on-primary font-bold text-lg shadow-lg shadow-primary/10"
-                            type="submit">Enviar Consulta</button>
-                    </form>
-                </div>
-                <div class="md:w-1/2 relative bg-[#0e0e0e] flex items-center justify-center overflow-hidden">
-                    <div class="relative z-10 p-12 text-center">
-                        <div
-                            class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
-                            <span class="material-symbols-outlined text-3xl">location_on</span>
-                        </div>
-                        <h4 class="font-headline text-2xl font-bold mb-2">Oficinas Centrales</h4>
-                        <p class="text-on-surface-variant text-sm mt-2">
-                            Montevideo 527 7° B - CABA<br><br>
-                            Av. Brigadier Juan Manuel de Rosas 182 1° B -<br>Lomas del Mirador, Prov. BA
+                    <p class="section-eyebrow">Quiénes somos</p>
+                    <h2 class="mt-4 font-headline text-4xl font-black tracking-tight text-white md:text-5xl">
+                        Estrategia, presencia y seguimiento para servicios que no admiten improvisación.
+                    </h2>
+                    <div class="mt-8 space-y-5 text-base leading-relaxed text-on-surface-variant md:text-lg">
+                        <p>
+                            Sercus es una empresa argentina especializada en seguridad integral. Analizamos cada operación, detectamos vulnerabilidades y armamos un esquema concreto para sostener orden y protección.
                         </p>
-                        <div class="mt-4 pt-4 border-t border-outline-variant/20">
-                            <p class="text-on-surface-variant text-sm font-bold">11 6032 4750 | 11 4435 0607</p>
-                            <p class="text-on-surface-variant text-sm mt-1">info@sercus.com.ar</p>
-                        </div>
-                        <div class="mt-12 h-64 w-full rounded-lg overflow-hidden border border-outline-variant/10">
-                            <img class="w-full h-full object-cover opacity-50"
-                                data-alt="Map location showing Montevideo street in Buenos Aires"
-                                data-location="CABA, Argentina"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy6LEPs4KAQ8VJkuTRRLFpseDiBFIV6ZUUeY9oajikVBY2GY2fsMKOkuMvvPvBL02PHMi_MxbPF6K36BuAjmPilBwhW6ihgeTBlWmTIimL3rqoB52dEG2BqUufubE5J7pCf6waMjL0KztAsb5smnWhb9QrbEa4Xtjyef2cflArr1EqRvY0yhl-1HCh9gDZF2mgMz3aPBsYB6In9ahwXPSdqiYQyW-_qKCtczD6pfE14WQXKx-qxRvCpq_T3PrcILLtgmQLflZSGOfc" />
-                        </div>
+                        <p>
+                            Trabajamos junto al cliente para ajustar recursos, protocolos y supervisión sin afectar la dinámica del lugar ni sumar complejidad innecesaria.
+                        </p>
                     </div>
-                    <div class="absolute inset-0 opacity-10 pointer-events-none">
-                        <svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
-                            <path d="M0 0 L100 100 M100 0 L0 100" stroke="currentColor" stroke-width="0.1"></path>
-                        </svg>
+                    <div class="mt-10 grid gap-4 md:grid-cols-2">
+                        <div class="surface-card">
+                            <p class="text-sm font-bold uppercase tracking-[0.18em] text-primary">Diagnóstico real</p>
+                            <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Partimos de riesgos concretos, no de soluciones genéricas ni discursos vacíos.</p>
+                        </div>
+                        <div class="surface-card">
+                            <p class="text-sm font-bold uppercase tracking-[0.18em] text-primary">Seguimiento operativo</p>
+                            <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Supervisión continua, feedback con el cliente y mejora sostenida del servicio.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-white/5">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
-            <div class="md:col-span-1">
-                <div class="text-xl font-bold text-[#ffd89c] mb-4 font-headline">SENTINEL ETHOS</div>
-                <p class="text-gray-500 text-sm leading-relaxed mb-6 font-body">Líderes en estrategias de seguridad
-                    integral desde 2004. Protegiendo lo que más importa con precisión y profesionalismo.</p>
-                <div class="flex gap-4">
-                    <span
-                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">social_leaderboard</span>
-                    <span
-                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">share</span>
-                    <span
-                        class="material-symbols-outlined text-gray-500 hover:text-primary cursor-pointer transition-colors">mail</span>
-                </div>
-            </div>
-            <div>
-                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Servicios</h5>
-                <ul class="space-y-4 text-gray-500 text-sm font-body">
-                    <li><a class="hover:text-white transition-colors" href="#">Vigilancia Física</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Custodia de Valores</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Análisis de Riesgos</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Seguridad Electrónica</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Compañía</h5>
-                <ul class="space-y-4 text-gray-500 text-sm font-body">
-                    <li><a class="hover:text-white transition-colors" href="#">Sobre Nosotros</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Global Operations</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Trabajá con nosotros</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Legal</h5>
-                <ul class="space-y-4 text-gray-500 text-sm font-body">
-                    <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Contact Support</a></li>
-                </ul>
-            </div>
-        </div>
-        <div
-            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-gray-600 text-xs font-body uppercase tracking-wider">© 2024 Sentinel Ethos Security. All
-                rights reserved.</p>
-            <div class="flex gap-6">
-                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">ARG</span>
-                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">USA</span>
-                <span class="text-xs text-gray-500 hover:text-primary cursor-pointer transition-colors">EUR</span>
-            </div>
-        </div>
-    </footer>
-    <!-- Modal Consulta Gratuita -->
-    <div id="consulta-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 transition-opacity duration-300">
-        <div class="bg-surface-container-high rounded-xl overflow-hidden shadow-2xl max-w-lg w-full mx-4 transform scale-95 transition-transform duration-300 relative border border-outline-variant/20">
-            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10 w-8 h-8 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-highest">
-                <span class="material-symbols-outlined text-sm">close</span>
-            </button>
-            <div class="p-8">
-                <div class="mb-6">
-                    <h2 class="font-headline text-2xl font-black mb-2 tracking-tight text-white">Consulta Gratuita</h2>
-                    <p class="text-on-surface-variant text-sm">Dejanos tus datos y un especialista se pondrá en contacto a la brevedad.</p>
-                </div>
-                <form class="space-y-4">
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="space-y-1.5">
-                            <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Nombre</label>
-                            <input class="w-full bg-surface-container-low border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary/50 transition-all text-on-surface" type="text" required />
-                        </div>
-                        <div class="space-y-1.5">
-                            <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Apellido</label>
-                            <input class="w-full bg-surface-container-low border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary/50 transition-all text-on-surface" type="text" required />
-                        </div>
-                    </div>
-                    <div class="space-y-1.5">
-                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Email</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary/50 transition-all text-on-surface" type="email" required />
-                    </div>
-                    <div class="space-y-1.5">
-                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Teléfono</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary/50 transition-all text-on-surface" type="tel" required />
-                    </div>
-                    <div class="space-y-1.5">
-                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Consulta</label>
-                        <textarea class="w-full bg-surface-container-low border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary/50 transition-all text-on-surface resize-none" rows="3" required></textarea>
-                    </div>
-                    <button class="w-full gilded-gradient py-3.5 rounded-xl text-on-primary font-bold text-sm tracking-wide shadow-lg shadow-primary/10 mt-6 active:scale-[0.98] transition-all" type="button" id="submit-consulta-btn">
-                        Enviar Consulta
-                    </button>
-                    <p id="consulta-success-msg" class="text-green-400 text-xs text-center font-bold mt-4 hidden">¡Tu consulta ha sido enviada con éxito!</p>
-                </form>
-            </div>
-        </div>
-    </div>
-</body>
+        </section>
 
+        <section class="bg-surface px-5 py-24 md:px-8" id="servicios">
+            <div class="mx-auto max-w-7xl">
+                <div class="max-w-2xl">
+                    <p class="section-eyebrow">Servicios</p>
+                    <h2 class="mt-4 font-headline text-4xl font-black tracking-tight text-white md:text-5xl">Coberturas pensadas para escenarios distintos, con un estándar operativo único.</h2>
+                </div>
+                <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="surface-card">
+                        <p class="text-lg font-bold text-white">Análisis de riesgo</p>
+                        <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Identificación de vulnerabilidades y diseño de medidas preventivas para bajar exposición real.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-lg font-bold text-white">Vigilancia física</p>
+                        <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Cobertura presencial con personal apto, protocolos claros y control permanente del servicio.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-lg font-bold text-white">Custodias de personas</p>
+                        <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Protección para ejecutivos, figuras públicas y traslados que requieren bajo perfil y anticipación.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-lg font-bold text-white">Custodia de bienes y valores</p>
+                        <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Acompañamiento operativo para activos sensibles, movimientos de valor y resguardo especializado.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-lg font-bold text-white">Seguridad electrónica</p>
+                        <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Alarmas, sensores, control de acceso y apoyo tecnológico integrado a la operación humana.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-lg font-bold text-white">Eventos y operativos</p>
+                        <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">Cobertura para encuentros corporativos, recepciones y escenarios con alta circulación de personas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-surface-container-lowest px-5 py-24 md:px-8">
+            <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+                <div>
+                    <p class="section-eyebrow">Diferenciales</p>
+                    <h2 class="mt-4 font-headline text-4xl font-black tracking-tight text-white md:text-5xl">Una propuesta sobria, clara y medible para cuidar mejor.</h2>
+                    <p class="mt-6 max-w-xl text-lg leading-relaxed text-on-surface-variant">
+                        Nuestro valor está en combinar criterio operativo, personal capacitado y contacto constante con cada cliente.
+                    </p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <article class="surface-card">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-primary">01. Relevamiento</p>
+                        <p class="mt-3 text-base font-semibold text-white">Entendemos la dinámica real del lugar y del servicio.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-primary">02. Personal idóneo</p>
+                        <p class="mt-3 text-base font-semibold text-white">Asignamos perfiles acordes al puesto y al nivel de exposición.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-primary">03. Supervisión</p>
+                        <p class="mt-3 text-base font-semibold text-white">Seguimos la operación para ajustar, corregir y sostener resultados.</p>
+                    </article>
+                    <article class="surface-card">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-primary">04. Contacto directo</p>
+                        <p class="mt-3 text-base font-semibold text-white">Respondemos por WhatsApp, teléfono o mail sin desviar al cliente.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-surface-container-low px-5 py-16 md:px-8">
+            <div class="mx-auto max-w-7xl text-center">
+                <p class="section-eyebrow">Confianza construida en servicio</p>
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-8 text-xl font-bold tracking-tight text-on-surface-variant md:gap-16 md:text-3xl">
+                    <span>Sanatorio Urquiza</span>
+                    <span>OSDEPYM</span>
+                    <span>ICANA</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-surface px-5 py-24 md:px-8" id="contacto">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid gap-8 overflow-hidden rounded-[2rem] border border-white/10 bg-surface-container-high shadow-2xl shadow-black/30 lg:grid-cols-[0.9fr_1.1fr]">
+                    <div class="bg-[#101010] p-8 md:p-12">
+                        <p class="section-eyebrow">Contacto</p>
+                        <h2 class="mt-4 font-headline text-4xl font-black tracking-tight text-white">Hablemos de tu necesidad y definamos el canal más conveniente.</h2>
+                        <p class="mt-5 text-base leading-relaxed text-on-surface-variant">
+                            Elegí el canal que te resulte más cómodo. Si usás el formulario, al enviarlo se abrirá tu cliente de correo con la consulta ya preparada.
+                        </p>
+                        <div class="mt-8 space-y-4">
+                            <a class="surface-card" href="https://wa.me/541160324750?text=Hola%20Sercus%2C%20quiero%20hacer%20una%20consulta%20sobre%20sus%20servicios." rel="noreferrer" target="_blank">
+                                <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">WhatsApp</p>
+                                <p class="mt-2 text-lg font-bold text-white">11 6032 4750</p>
+                            </a>
+                            <a class="surface-card" href="mailto:info@sercus.com.ar">
+                                <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Email</p>
+                                <p class="mt-2 text-lg font-bold text-white">info@sercus.com.ar</p>
+                            </a>
+                            <div class="surface-card">
+                                <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Oficinas</p>
+                                <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Montevideo 527 7° B, CABA</p>
+                                <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Av. Brigadier Juan Manuel de Rosas 182 1° B, Lomas del Mirador</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 md:p-12">
+                        <div class="max-w-2xl">
+                            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Formulario de contacto</p>
+                            <h3 class="mt-3 font-headline text-3xl font-black text-white">Prepará tu consulta por email</h3>
+                        </div>
+                        <form class="mt-8 space-y-6" data-mailto-form data-mailto-subject="Consulta desde el sitio web de Sercus">
+                            <div class="grid gap-4 md:grid-cols-2">
+                                <div>
+                                    <label class="mb-2 block text-xs font-bold uppercase tracking-[0.2em] text-gray-500" for="nombre">Nombre</label>
+                                    <input
+                                        autocomplete="given-name"
+                                        class="w-full rounded-2xl border border-white/5 bg-surface-container-low p-4 text-on-surface placeholder:text-gray-600 focus:border-primary/30 focus:ring-0"
+                                        data-label="Nombre"
+                                        id="nombre"
+                                        name="nombre"
+                                        placeholder="Tu nombre"
+                                        required
+                                        type="text"
+                                    />
+                                </div>
+                                <div>
+                                    <label class="mb-2 block text-xs font-bold uppercase tracking-[0.2em] text-gray-500" for="apellido">Apellido</label>
+                                    <input
+                                        autocomplete="family-name"
+                                        class="w-full rounded-2xl border border-white/5 bg-surface-container-low p-4 text-on-surface placeholder:text-gray-600 focus:border-primary/30 focus:ring-0"
+                                        data-label="Apellido"
+                                        id="apellido"
+                                        name="apellido"
+                                        placeholder="Tu apellido"
+                                        required
+                                        type="text"
+                                    />
+                                </div>
+                            </div>
+                            <div class="grid gap-4 md:grid-cols-2">
+                                <div>
+                                    <label class="mb-2 block text-xs font-bold uppercase tracking-[0.2em] text-gray-500" for="email">Email</label>
+                                    <input
+                                        autocomplete="email"
+                                        class="w-full rounded-2xl border border-white/5 bg-surface-container-low p-4 text-on-surface placeholder:text-gray-600 focus:border-primary/30 focus:ring-0"
+                                        data-label="Email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="nombre@empresa.com"
+                                        required
+                                        type="email"
+                                    />
+                                </div>
+                                <div>
+                                    <label class="mb-2 block text-xs font-bold uppercase tracking-[0.2em] text-gray-500" for="telefono">Teléfono</label>
+                                    <input
+                                        autocomplete="tel"
+                                        class="w-full rounded-2xl border border-white/5 bg-surface-container-low p-4 text-on-surface placeholder:text-gray-600 focus:border-primary/30 focus:ring-0"
+                                        data-label="Teléfono"
+                                        id="telefono"
+                                        name="telefono"
+                                        placeholder="11 1234 5678"
+                                        required
+                                        type="tel"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <label class="mb-2 block text-xs font-bold uppercase tracking-[0.2em] text-gray-500" for="mensaje">Mensaje</label>
+                                <textarea
+                                    class="w-full rounded-2xl border border-white/5 bg-surface-container-low p-4 text-on-surface placeholder:text-gray-600 focus:border-primary/30 focus:ring-0"
+                                    data-label="Mensaje"
+                                    id="mensaje"
+                                    name="mensaje"
+                                    placeholder="Contanos brevemente qué tipo de servicio necesitás."
+                                    required
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                                <p class="form-note">No guardamos el mensaje en el sitio. Al enviar se abrirá tu cliente de correo con la consulta lista para revisar y mandar.</p>
+                                <button
+                                    class="gilded-gradient inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-sm font-extrabold uppercase tracking-[0.12em] text-on-primary shadow-lg shadow-primary/10 transition-transform duration-150 hover:brightness-110 active:scale-95"
+                                    type="submit"
+                                >
+                                    Preparar email
+                                    <span class="material-symbols-outlined text-base">mail</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="site-modal-root"></div>
+</body>
 </html>
