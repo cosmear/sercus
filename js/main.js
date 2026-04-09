@@ -1,5 +1,6 @@
 const SITE_CONFIG = {
-    brand: "SERCUS",
+    brand: "Sercus",
+    logoSrc: "./assets/logo-sercus.png",
     email: "info@sercus.com.ar",
     phoneDisplay: "11 6032 4750",
     phoneHref: "tel:+541160324750",
@@ -26,6 +27,11 @@ function getContactHref() {
 
 function getCurrentYear() {
     return new Date().getFullYear();
+}
+
+function renderBrandLogo(variant = "header") {
+    const variantClass = variant === "footer" ? "brand-logo brand-logo--footer" : "brand-logo brand-logo--header";
+    return `<img class="${variantClass}" src="${SITE_CONFIG.logoSrc}" alt="" />`;
 }
 
 function getNavLinkClasses(isActive) {
@@ -66,8 +72,9 @@ function renderHeader() {
         <header class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-[#111111]/92 backdrop-blur-xl">
             <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
             <nav aria-label="Principal" class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-                <a class="font-headline text-2xl font-black tracking-[0.18em] text-primary" href="index.html" aria-label="Ir al inicio de Sercus">
-                    SERCUS
+                <a class="brand-logo-link" href="index.html" aria-label="Ir al inicio de Sercus">
+                    ${renderBrandLogo()}
+                    <span class="sr-only">${SITE_CONFIG.brand}</span>
                 </a>
                 <div class="hidden items-center gap-2 md:flex">
                     ${desktopLinks}
@@ -148,7 +155,10 @@ function renderFooter() {
         <footer class="border-t border-white/5 bg-surface-container-lowest px-5 py-16 md:px-8">
             <div class="mx-auto grid max-w-7xl gap-12 md:grid-cols-[1.3fr_1fr_1fr]">
                 <div class="max-w-md">
-                    <p class="font-headline text-xl font-black tracking-[0.18em] text-primary">SERCUS</p>
+                    <a class="brand-logo-link" href="index.html" aria-label="Ir al inicio de Sercus">
+                        ${renderBrandLogo("footer")}
+                        <span class="sr-only">${SITE_CONFIG.brand}</span>
+                    </a>
                     <p class="mt-4 text-sm leading-relaxed text-on-surface-variant">
                         Seguridad integral para edificios, custodias sensibles y operaciones corporativas en CABA y GBA.
                     </p>
@@ -472,11 +482,168 @@ function setupMailtoForms() {
     });
 }
 
+function setupLogoCarousel() {
+    document.querySelectorAll("[data-logo-carousel]").forEach((carousel) => {
+        const track = carousel.querySelector("[data-logo-track]");
+        const dotsRoot = carousel.querySelector("[data-logo-dots]");
+        const prevButton = carousel.parentElement.querySelector("[data-logo-prev]");
+        const nextButton = carousel.parentElement.querySelector("[data-logo-next]");
+        const slides = track ? Array.from(track.children) : [];
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let autoplayId = null;
+        let currentIndex = 0;
+        let slidesPerView = 1;
+
+        if (!track || !dotsRoot || !prevButton || !nextButton || !slides.length) {
+            return;
+        }
+
+        function getSlidesPerView() {
+            if (window.innerWidth >= 1024) {
+                return 3;
+            }
+
+            if (window.innerWidth >= 768) {
+                return 2;
+            }
+
+            return 1;
+        }
+
+        function getMaxIndex() {
+            return Math.max(0, slides.length - slidesPerView);
+        }
+
+        function renderDots() {
+            const totalDots = Math.max(1, getMaxIndex() + 1);
+            dotsRoot.innerHTML = "";
+
+            for (let index = 0; index < totalDots; index += 1) {
+                const dot = document.createElement("button");
+                dot.type = "button";
+                dot.className = "logo-carousel__dot";
+                dot.setAttribute("role", "tab");
+                dot.setAttribute("aria-label", `Ir al logo ${index + 1}`);
+                dot.dataset.index = String(index);
+                dotsRoot.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            Array.from(dotsRoot.children).forEach((dot, index) => {
+                const isActive = index === currentIndex;
+                dot.classList.toggle("is-active", isActive);
+                dot.setAttribute("aria-selected", isActive ? "true" : "false");
+                dot.setAttribute("tabindex", isActive ? "0" : "-1");
+            });
+        }
+
+        function updateCarousel() {
+            const maxIndex = getMaxIndex();
+
+            if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+            }
+
+            track.style.transform = `translateX(-${currentIndex * (100 / slidesPerView)}%)`;
+            updateDots();
+        }
+
+        function goTo(index) {
+            const maxIndex = getMaxIndex();
+
+            if (index > maxIndex) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = maxIndex;
+            } else {
+                currentIndex = index;
+            }
+
+            updateCarousel();
+        }
+
+        function stopAutoplay() {
+            if (autoplayId) {
+                window.clearInterval(autoplayId);
+                autoplayId = null;
+            }
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+
+            if (reduceMotion.matches || getMaxIndex() === 0) {
+                return;
+            }
+
+            autoplayId = window.setInterval(() => {
+                goTo(currentIndex + 1);
+            }, 4200);
+        }
+
+        function refreshCarousel() {
+            const nextSlidesPerView = getSlidesPerView();
+
+            if (nextSlidesPerView !== slidesPerView) {
+                slidesPerView = nextSlidesPerView;
+                renderDots();
+            } else {
+                slidesPerView = nextSlidesPerView;
+            }
+
+            updateCarousel();
+            startAutoplay();
+        }
+
+        prevButton.addEventListener("click", () => {
+            goTo(currentIndex - 1);
+            startAutoplay();
+        });
+
+        nextButton.addEventListener("click", () => {
+            goTo(currentIndex + 1);
+            startAutoplay();
+        });
+
+        dotsRoot.addEventListener("click", (event) => {
+            const target = event.target;
+
+            if (!(target instanceof HTMLButtonElement) || !target.dataset.index) {
+                return;
+            }
+
+            goTo(Number(target.dataset.index));
+            startAutoplay();
+        });
+
+        carousel.addEventListener("mouseenter", stopAutoplay);
+        carousel.addEventListener("mouseleave", startAutoplay);
+        carousel.addEventListener("focusin", stopAutoplay);
+        carousel.addEventListener("focusout", startAutoplay);
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                stopAutoplay();
+            } else {
+                startAutoplay();
+            }
+        });
+        window.addEventListener("resize", refreshCarousel);
+        reduceMotion.addEventListener("change", refreshCarousel);
+
+        slidesPerView = getSlidesPerView();
+        renderDots();
+        updateCarousel();
+        startAutoplay();
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     renderSiteShell();
     setupConsultaModal();
     setupMobileMenu();
     setupMailtoForms();
+    setupLogoCarousel();
     loadGoogleTranslate();
     bindTranslateButtons();
     setTimeout(bindTranslateButtons, 1500);

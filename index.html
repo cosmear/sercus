@@ -15,10 +15,11 @@
     />
     <meta
         property="og:image"
-        content="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpfzn_zmpvgIa4l5FpRs6x9_2wONcbXc379RiGM4XNAvckgqdNTw4maTRt8HSZROcArb3XzEIdRj0F0chAtk_paWkBjBPXMIqIEHjL4cXcjGzFVfM3ca0dMZDDcsy2l7hdUKHX1tYqqcl2G7-PbTYu-wH-3F0gOF-3Y1oEJHkjRBa6r_G22QV73LRo72QqwOvybWM4ExcHLEiXoWo3akv8TaG4NfSWGe5AdfwC-8x-XDjDddcorfZxKB6I3ds6eFYhwPjSGPVFUtm"
+        content="./assets/logo-sercus.png"
     />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="./js/tailwind-config.js"></script>
+    <link rel="icon" type="image/png" href="./assets/logo-sercus.png" />
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/main.js" defer></script>
     <title>Sercus | Seguridad integral en CABA y GBA</title>
@@ -33,7 +34,7 @@
                 <img
                     alt="Equipo de seguridad profesional en un entorno corporativo"
                     class="h-full w-full object-cover opacity-30"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpfzn_zmpvgIa4l5FpRs6x9_2wONcbXc379RiGM4XNAvckgqdNTw4maTRt8HSZROcArb3XzEIdRj0F0chAtk_paWkBjBPXMIqIEHjL4cXcjGzFVfM3ca0dMZDDcsy2l7hdUKHX1tYqqcl2G7-PbTYu-wH-3F0gOF-3Y1oEJHkjRBa6r_G22QV73LRo72QqwOvybWM4ExcHLEiXoWo3akv8TaG4NfSWGe5AdfwC-8x-XDjDddcorfZxKB6I3ds6eFYhwPjSGPVFUtm"
+                    src="./assets/Seguridad_privada.jpg"
                 />
                 <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/85 to-surface/30"></div>
             </div>
@@ -207,12 +208,70 @@
         </section>
 
         <section class="bg-surface-container-low px-5 py-16 md:px-8">
-            <div class="mx-auto max-w-7xl text-center">
-                <p class="section-eyebrow">Confianza construida en servicio</p>
-                <div class="mt-8 flex flex-wrap items-center justify-center gap-8 text-xl font-bold tracking-tight text-on-surface-variant md:gap-16 md:text-3xl">
-                    <span>Sanatorio Urquiza</span>
-                    <span>OSDEPYM</span>
-                    <span>ICANA</span>
+            <div class="mx-auto max-w-7xl">
+                <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+                    <div class="max-w-2xl">
+                        <p class="section-eyebrow">Confianza construida en servicio</p>
+                        <h2 class="mt-4 font-headline text-4xl font-black tracking-tight text-white md:text-5xl">
+                            Empresas que ya confian en nuestra cobertura.
+                        </h2>
+                        <p class="mt-4 max-w-xl text-base leading-relaxed text-on-surface-variant">
+                            Recorre algunos de los logos que acompanaron operaciones, edificios y servicios coordinados por Sercus.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button
+                            class="logo-carousel__control"
+                            type="button"
+                            aria-label="Ver logos anteriores"
+                            data-logo-prev
+                        >
+                            <span class="material-symbols-outlined">west</span>
+                        </button>
+                        <button
+                            class="logo-carousel__control"
+                            type="button"
+                            aria-label="Ver logos siguientes"
+                            data-logo-next
+                        >
+                            <span class="material-symbols-outlined">east</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="logo-carousel mt-10" data-logo-carousel>
+                    <div class="logo-carousel__viewport">
+                        <div class="logo-carousel__track" data-logo-track>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 01" src="./assets/logo2.jpg" />
+                            </article>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 02" src="./assets/logo4.jpg" />
+                            </article>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 03" src="./assets/logo5.jpg" />
+                            </article>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 04" src="./assets/logo6.jpg" />
+                            </article>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 05" src="./assets/logo7.jpg" />
+                            </article>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 06" src="./assets/logo8.jpg" />
+                            </article>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 07" src="./assets/logo9.jpg" />
+                            </article>
+                            <article class="logo-carousel__slide">
+                                <img class="logo-carousel__image" alt="Logo de cliente destacado 08" src="./assets/logo10.jpg" />
+                            </article>
+                        </div>
+                    </div>
+                    <div class="logo-carousel__footer">
+                        <div class="logo-carousel__dots" aria-label="Seleccion de logos" role="tablist" data-logo-dots></div>
+                        <p class="logo-carousel__hint">Usa las flechas para recorrer los logos destacados.</p>
+                    </div>
                 </div>
             </div>
         </section>
